@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="127850" started-at="2020-01-16T09:42:33Z" finished-at="2020-01-16T09:44:41Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="127850" started-at="2020-01-16T09:42:33Z" finished-at="2020-01-16T09:44:41Z">
+      <class name="se.andersson.selenium.tests.ProxyTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:se.andersson.selenium.tests.ProxyTest@47af7f3d]" name="setUp" is-config="true" duration-ms="4101" started-at="2020-01-16T10:43:19Z" finished-at="2020-01-16T10:43:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCaseOne()[pri:0, instance:se.andersson.selenium.tests.ProxyTest@47af7f3d]" name="testCaseOne" duration-ms="5851" started-at="2020-01-16T10:43:23Z" finished-at="2020-01-16T10:43:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseOne -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:se.andersson.selenium.tests.ProxyTest@47af7f3d]" name="tearDown" is-config="true" duration-ms="3088" started-at="2020-01-16T10:43:29Z" finished-at="2020-01-16T10:43:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- se.andersson.selenium.tests.ProxyTest -->
+      <class name="se.andersson.selenium.tests.SelectorTest">
+        <test-method status="PASS" signature="beforeEach()[pri:0, instance:se.andersson.selenium.tests.SelectorTest@7c729a55]" name="beforeEach" is-config="true" duration-ms="3545" started-at="2020-01-16T10:43:32Z" finished-at="2020-01-16T10:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method status="PASS" signature="selectCSS()[pri:0, instance:se.andersson.selenium.tests.SelectorTest@7c729a55]" name="selectCSS" duration-ms="6402" started-at="2020-01-16T10:43:35Z" finished-at="2020-01-16T10:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCSS -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:se.andersson.selenium.tests.SelectorTest@7c729a55]" name="afterEach" is-config="true" duration-ms="156" started-at="2020-01-16T10:43:42Z" finished-at="2020-01-16T10:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+        <test-method status="PASS" signature="beforeEach()[pri:0, instance:se.andersson.selenium.tests.SelectorTest@7c729a55]" name="beforeEach" is-config="true" duration-ms="3372" started-at="2020-01-16T10:43:42Z" finished-at="2020-01-16T10:43:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method status="PASS" signature="selectXpath()[pri:0, instance:se.andersson.selenium.tests.SelectorTest@7c729a55]" name="selectXpath" duration-ms="1075" started-at="2020-01-16T10:43:45Z" finished-at="2020-01-16T10:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectXpath -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:se.andersson.selenium.tests.SelectorTest@7c729a55]" name="afterEach" is-config="true" duration-ms="165" started-at="2020-01-16T10:43:46Z" finished-at="2020-01-16T10:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+      </class> <!-- se.andersson.selenium.tests.SelectorTest -->
+      <class name="se.andersson.selenium.tests.ShopTest">
+        <test-method status="PASS" signature="beforeEach()[pri:0, instance:se.andersson.selenium.tests.ShopTest@3bb9a3ff]" name="beforeEach" is-config="true" duration-ms="3281" started-at="2020-01-16T10:43:47Z" finished-at="2020-01-16T10:43:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method status="PASS" signature="buyStuff()[pri:0, instance:se.andersson.selenium.tests.ShopTest@3bb9a3ff]" name="buyStuff" duration-ms="51375" started-at="2020-01-16T10:43:50Z" finished-at="2020-01-16T10:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyStuff -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:se.andersson.selenium.tests.ShopTest@3bb9a3ff]" name="afterEach" is-config="true" duration-ms="1" started-at="2020-01-16T10:44:41Z" finished-at="2020-01-16T10:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+      </class> <!-- se.andersson.selenium.tests.ShopTest -->
+      <class name="se.andersson.selenium.tests.MenuTest">
+        <test-method status="PASS" signature="beforeEach()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="beforeEach" is-config="true" duration-ms="5388" started-at="2020-01-16T10:42:33Z" finished-at="2020-01-16T10:42:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method status="PASS" signature="headerLinks()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="headerLinks" duration-ms="7897" started-at="2020-01-16T10:42:39Z" finished-at="2020-01-16T10:42:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerLinks -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="afterEach" is-config="true" duration-ms="1" started-at="2020-01-16T10:42:47Z" finished-at="2020-01-16T10:42:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+        <test-method status="PASS" signature="beforeEach()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="beforeEach" is-config="true" duration-ms="3347" started-at="2020-01-16T10:42:47Z" finished-at="2020-01-16T10:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method status="PASS" signature="leftMenu()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="leftMenu" duration-ms="15226" started-at="2020-01-16T10:42:50Z" finished-at="2020-01-16T10:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leftMenu -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="afterEach" is-config="true" duration-ms="1" started-at="2020-01-16T10:43:05Z" finished-at="2020-01-16T10:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+        <test-method status="PASS" signature="beforeEach()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="beforeEach" is-config="true" duration-ms="3313" started-at="2020-01-16T10:43:05Z" finished-at="2020-01-16T10:43:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method status="PASS" signature="mainMenu()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="mainMenu" duration-ms="10220" started-at="2020-01-16T10:43:09Z" finished-at="2020-01-16T10:43:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainMenu -->
+        <test-method status="PASS" signature="afterEach()[pri:0, instance:se.andersson.selenium.tests.MenuTest@74e52303]" name="afterEach" is-config="true" duration-ms="0" started-at="2020-01-16T10:43:19Z" finished-at="2020-01-16T10:43:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+      </class> <!-- se.andersson.selenium.tests.MenuTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

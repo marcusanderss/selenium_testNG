@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+	  <class name="se.andersson.selenium.tests.MenuTest"/>
+	  <class name="se.andersson.selenium.tests.ProxyTest"/>
+	  <class name="se.andersson.selenium.tests.SelectorTest"/>
+	  <class name="se.andersson.selenium.tests.ShopTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
