@@ -26,12 +26,13 @@ public class ShopTest {
 
     private static final Logger LOG = LogManager.getLogger(ShopTest.class);
     private MenuPO menu;
+    private Instant timerStart;
 
     @Test
     public void buyStuff() {
-        
+
         assertTrue(menu.getNumberOfBoughtItems() == 0);
-        
+
         menu.clickApparelShoes();
 
         ProductsPO products = new ProductsPO();
@@ -44,31 +45,31 @@ public class ShopTest {
         products.clickNextPage();
         products.clickItem(1);
         products.addToCart();
-        
+
         assertTrue(menu.getNumberOfBoughtItems() == 1);
 
         menu.clickApparelShoes();
         products.clickItem(5);
         products.addToCart();
-        
+
         assertTrue(menu.getNumberOfBoughtItems() == 2);
 
         menu.clickNotebooks();
         products.clickItem(0);
         products.addToCart();
-        
+
         assertTrue(menu.getNumberOfBoughtItems() == 3);
 
         menu.clickSubMenu("Electronics", "Cell phones");
         products.clickItem(2);
         products.addToCart();
-        
+
         assertTrue(menu.getNumberOfBoughtItems() == 4);
 
         menu.clickDigitalDownloads();
         products.clickItem(1);
         products.addToCart();
-        
+
         assertTrue(menu.getNumberOfBoughtItems() == 5);
 
         ShoppingCartPO shoppingCart = menu.clickShoppingCart();
@@ -89,21 +90,22 @@ public class ShopTest {
         menu.clickShoppingCart();
         CheckoutPO checkout = shoppingCart.clickCheckOut();
         checkout.checkOut();
-        
+
         menu.clickLogout();
     }
-Instant start;
+
     @BeforeMethod
     public void beforeEach() {
-        start = Instant.now();
+        timerStart = Instant.now();
         menu = new MenuPO("http://demowebshop.tricentis.com/");
     }
 
     @AfterMethod
     public void afterEach() {
         menu.cleanUp();
-        Instant finish = Instant.now();
-            long elapsed = Duration.between(start, finish).toMillis();
-            LOG.info("Executed in " + (elapsed / 1000) + " seconds.");
+        
+        Instant timerStop = Instant.now();
+        long elapsedTime = Duration.between(timerStart, timerStop).toMillis();
+        LOG.info("Test did run for " + (elapsedTime / 1000) + " seconds.");
     }
 }

@@ -1,7 +1,6 @@
 package se.andersson.selenium.tests;
 
 import java.text.MessageFormat;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -83,7 +82,7 @@ public class SelectorTest {
 
     @BeforeMethod
     public static void beforeEach() {
-        DriverFactory factory = new DriverFactory();
+        DriverFactory factory = DriverFactory.getInstance();
         driver = factory.getDriver();
         driver.get("http://demowebshop.tricentis.com/");
     }

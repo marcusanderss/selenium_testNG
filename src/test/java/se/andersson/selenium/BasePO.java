@@ -36,7 +36,7 @@ public class BasePO {
     }
 
     public BasePO(final String location) {
-        DriverFactory factory = new DriverFactory();
+        DriverFactory factory = DriverFactory.getInstance();
         driver = factory.getDriver();
         driver.get(location);
 
@@ -44,7 +44,7 @@ public class BasePO {
     }
     
     public BasePO(final String location, final int latency) {
-        DriverFactory factory = new DriverFactory();
+        DriverFactory factory = DriverFactory.getInstance();
         factory.addProxy(latency);
         driver = factory.getDriver();
         driver.get(location);
@@ -124,7 +124,7 @@ public class BasePO {
     }
 
     public final void cleanUp() {
-        DriverFactory factory = new DriverFactory();
+        DriverFactory factory = DriverFactory.getInstance();
         factory.close();
     }
 
@@ -206,8 +206,7 @@ public class BasePO {
         return new WebDriverWait(driver, seconds).until(ExpectedConditions.invisibilityOf(element));
     }
 
-    @SuppressWarnings("finally")
-	private WebElement element(final By by, final int seconds) {
+    private WebElement element(final By by, final int seconds) {
         WebDriverWait w = new WebDriverWait(driver, seconds);
 
         Instant start = Instant.now();
@@ -230,8 +229,7 @@ public class BasePO {
         }
     }
 
-    @SuppressWarnings("finally")
-	private final WebElement parent(final By by, final int seconds) {
+    private final WebElement parent(final By by, final int seconds) {
         WebElement element = findElement(by);
         WebDriverWait w = new WebDriverWait(driver, TIME_TO_WAIT);
 
